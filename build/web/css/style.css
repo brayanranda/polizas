@@ -1,0 +1,305 @@
+*
+{
+    border: 0;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    resize: none;
+    text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+body
+{
+    /*
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    */
+    overflow-x: hidden;
+}
+
+.header
+{
+    width: 100%;
+}
+
+.header__content
+{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    width: 75%;
+}
+
+.header__logo
+{
+    width: 140px;
+}
+
+.header__menu
+{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+}
+
+.header__menu--item
+{
+
+}
+
+.header__menu--a
+{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.header__menu--a:hover
+{
+    color: blue;
+}
+
+.footer
+{
+    background-color: black;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.footer--a
+{
+    color: white;
+}
+
+/*** Slider ***/
+
+.banner
+{
+    align-items: center;
+    display: flex;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.banner--text
+{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.banner--h1
+{
+    color: white;
+    font-size: 40px;
+}
+
+.banner--p
+{
+    color: white;
+    font-size: 20px;
+}
+
+.banner__fig
+{
+    height: 300px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner__fig--img
+{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+
+/*** Slider ***/
+
+/*** Info index ***/
+
+.info-index
+{
+    padding: 2em 0;
+    width: 100%;
+}
+
+.info-index__content
+{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.info-index__fig
+{
+    border-radius: 10px;
+    height: 300px;
+    overflow: hidden;
+    width: 45%;
+}
+
+.info-index__fig--img
+{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.info-index__texto
+{
+    width: 45%;
+}
+
+.info-index__texto h1 
+{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.info-index__texto--p
+{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+
+/*** Info index ***/
+
+.regcliente
+{
+    padding: 2em 0;
+    width: 100%;
+}
+
+.regcliente__content
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.regcliente__fig
+{
+    height: 500px;
+    width: 40%;
+}
+
+.regcliente__fig--img
+{
+    height: 100%;
+    object-fit: cover;
+    object-position: cover;
+    width: 100%;
+}
+
+.form
+{
+    border: 2px solid #c4c4c4;
+    padding: 2.5em 0;
+    width: 45%;
+}
+
+.form__content
+{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.form__content h1
+{
+    font-size: 25px;
+    font-weight: 300;
+    padding-bottom: 2em;
+}
+
+.form__div
+{
+    height: 60px;
+    position: relative;
+    width: 100%;
+}
+
+.form__div--input
+{
+    border-bottom: 1px solid #777;
+    color: #333;
+    font-size: 18px;
+    font-weight: 300px;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.form__div--input:focus ~ .form__div--span,
+.form__div--input:valid ~ .form__div--span
+{
+    color: blue;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transform: translateY(-10px);
+}
+
+.form__div--span
+{
+    left: 0;    
+    pointer-events: none;
+    position: absolute;
+    transition: .5s;
+}
+
+.form-btn
+{
+    background-color: #030eff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 2em;
+    padding: .7em 0;
+    width: 100%;
+}
+
+.form-btn:hover
+{
+    background-color: black;
+    color: white;
+}
+
+select
+{
+    font-size: 17px;
+    height: 40px;
+    border-bottom: 1px solid #777;
+    width: 100%;
+}
+
